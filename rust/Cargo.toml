@@ -1,0 +1,13 @@
+[package]
+name = "rust_lib_apk_parser"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+flutter_rust_bridge = { version = "=2.7.1", features = ["log"] }
+apk-parser = { git = "https://git.v0l.io/Kieran/nap.git", package = "apk-parser" }
+anyhow = "1.0.95"
+log = "0.4.25"
